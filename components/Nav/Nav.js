@@ -1,19 +1,25 @@
 import NavHeader from "./NavHeader"
-import NavItemsList from "./NavItemsList";
+import NavItemList from "./NavItemList";
 import NavItem from "./NavItem";
 
 export default function Nav() {
+
+    function handleClickLogin() {
+
+    }
     return (
-        <nav className="flex flex-row justify-between bg-cyan-500"  >
-            <NavHeader>
-                <p className="p-2 whitespace-nowrap border-b-4 border-black font-bold hover:cursor-pointer hover:border-cyan-600">
-                    Pokemon Cards
-                </p>
-            </NavHeader>
-            <NavItemsList>
-                <NavItem title={"Iniciar Sesión"} />
-                <NavItem title={"Registrarse"} />
-            </NavItemsList>
+        <nav className="w-full bg-primary flex flex-col items-center" >
+            <div className="container flex flex-row justify-between items-center ">
+                <NavHeader to="/" >
+                    <p className=" whitespace-nowrap font-bold  ">
+                        Pokemon Cards
+                    </p>
+                </NavHeader>
+                <NavItemList>
+                    <NavItem title={"Iniciar Sesión"} href={"/login"} />
+                    <NavItem title={"Registrarse"} href={"/register"}/>
+                </NavItemList>
+            </div>
         </nav>
     );
 }
