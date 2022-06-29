@@ -1,7 +1,12 @@
-export default function NavHeader({children}) {
+import Link from "next/link";
+
+export default function NavHeader({children, to}) {
     return (
-        <div className="max-w-min">
-            {children}
+        <div className="p-3 hover:cursor-pointer">
+            <Link href={to}>
+                {children}
+            </Link>
         </div>
+
     )
 }

@@ -2,14 +2,14 @@ import {useEffect, useState} from "react";
 
 /// Hook para el manejo del usuario logueado
 export function useUser() {
+    /// User state
     const [user, setUser] = useState();
+
+    /// Effect para setear el user guardado en el LocalStorage si existe
     useEffect(()=>{
        const initialUser = JSON.parse(window.localStorage.getItem('user'));
        setUser(initialUser)
     }, [setUser])
-    /// Recupero el usuario del LocalStorage si existe
-
-    /// State para el usuario
 
 
     function userChanged(user) {
