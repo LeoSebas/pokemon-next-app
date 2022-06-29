@@ -34,10 +34,10 @@ export default function Home() {
                 <section className="flex w-full">
                     <article className="flex-[3] m-5 rounded-2xl backdrop-blur-[20px]">
                         <p className="text-2xl text-justify p-3">Pokemon Cards App es una aplicación para
-                            visualizar cartas pokemon.
+                            visualizar cartas con toda la información de tus pokemon preferidos.
                         </p>
                         <p className="text-2xl text-justify p-3">
-                            Iniciá sesión para conocer todo acerca de los pokémon!!!
+                            Iniciá sesión o regístrate para conocer todo acerca de los pokémon!!!
                         </p>
                     </article>
                     <aside className="p-5 flex-[2] m-5 rounded-2xl backdrop-blur-[20px] flex justify-center">
